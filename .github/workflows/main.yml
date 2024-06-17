@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Install Dependencies
-        run: yarn ci
+        run: yarn
       - name: Run Vitest
         run: yarn test
   # ESLINT JOB
@@ -22,6 +22,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Install Dependencies
-        run: yarn ci
+        run: yarn
       - name: Run lint
         run: yarn lint
